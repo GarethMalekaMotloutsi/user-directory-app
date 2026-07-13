@@ -99,4 +99,4 @@ In the future I would like to add:
 
 ## Author
 
-**Gareth Maleka**
+**Gareth Maleka Motloutsi**
