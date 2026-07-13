@@ -27,11 +27,11 @@ function handleAddUser() {
   }
 
   const newUser = {
-    id: users.length + 1,
+    id: Date.now(),
     name: newName,
     email: newEmail,
     company: {
-      name: 'New Company',
+      name: 'User Added',
     },
   }
 
@@ -43,7 +43,7 @@ function handleAddUser() {
 
   return (
     <div className="app">
-      <h1>User Directory</h1>
+      <h1>User Directory App</h1>
 
 <div className="add-user-form">
   <h2>Add New User</h2>
@@ -62,7 +62,7 @@ function handleAddUser() {
     onChange={(event) => setNewEmail(event.target.value)}
   />
 
-  <button onClick={handleAddUser}>Add User</button>
+  <button onClick={handleAddUser}>Add New User</button>
 </div>
 
 <input
