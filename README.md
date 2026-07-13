@@ -1,16 +1,102 @@
-# React + Vite
+# User Directory App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that fetches user data from an API and allows users to search through the directory using a controlled search input. As an additional feature, new users can be added to the top of the list without refreshing the page.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Fetch user data from the JSONPlaceholder API
+- Display each user's name, email, and company
+- Search users by name
+- Filter results instantly while typing
+- Display a "No users found." message when there are no matches
+- Add a new user to the directory (Bonus)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6)
+- CSS
+- Vite
+- Fetch API
+
+---
+
+## API
+
+This project uses the JSONPlaceholder Users API:
+
+https://jsonplaceholder.typicode.com/users
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/user-directory-app.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd user-directory-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Folder Structure
+
+```
+src
+│── App.jsx
+│── App.css
+│── index.css
+│── main.jsx
+```
+
+---
+
+## What I Learned
+
+This project helped me improve my understanding of:
+
+- Fetching data from an API
+- Using the `useEffect` Hook
+- Managing state with `useState`
+- Creating controlled components
+- Filtering data based on user input
+- Building and styling a React application
+
+---
+
+## Future Improvements
+
+In the future I would like to add:
+
+- Edit user details
+- Delete users
+- Store users in a database
+- Sort users alphabetically
+
+---
+
+## Author
+
+**Gareth Maleka**
