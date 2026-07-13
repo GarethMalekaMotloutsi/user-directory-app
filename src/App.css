@@ -57,3 +57,41 @@ h1 {
   font-size: 18px;
   margin-top: 20px;
 }
+
+.add-user-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #dddddd;
+}
+
+.add-user-form h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.add-user-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.add-user-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-user-form button:hover {
+  background-color: #357abd;
+}

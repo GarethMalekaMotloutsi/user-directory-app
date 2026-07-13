@@ -5,6 +5,9 @@ function App() {
   const [users, setUsers] = useState([])
   const [search, setSearch] = useState('')
 
+  const [newName, setNewName] = useState('')
+  const [newEmail, setNewEmail] = useState('')
+
   useEffect(() => {
   fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
@@ -18,10 +21,49 @@ function App() {
   user.name.toLowerCase().includes(search.toLowerCase())
 )
 
+function handleAddUser() {
+  if (newName.trim() === '' || newEmail.trim() === '') {
+    return
+  }
+
+  const newUser = {
+    id: users.length + 1,
+    name: newName,
+    email: newEmail,
+    company: {
+      name: 'New Company',
+    },
+  }
+
+  setUsers([newUser, ...users])
+
+  setNewName('')
+  setNewEmail('')
+}
 
   return (
     <div className="app">
       <h1>User Directory</h1>
+
+<div className="add-user-form">
+  <h2>Add New User</h2>
+
+  <input
+    type="text"
+    placeholder="Enter name"
+    value={newName}
+    onChange={(event) => setNewName(event.target.value)}
+  />
+
+  <input
+    type="email"
+    placeholder="Enter email"
+    value={newEmail}
+    onChange={(event) => setNewEmail(event.target.value)}
+  />
+
+  <button onClick={handleAddUser}>Add User</button>
+</div>
 
 <input
   type="text"
