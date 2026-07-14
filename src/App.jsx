@@ -44,6 +44,9 @@ function handleAddUser() {
   return (
     <div className="app">
       <h1>User Directory App</h1>
+        <p className="subtitle">
+    Search and manage user information
+  </p>
 
 <div className="add-user-form">
   <h2>Add New User</h2>
